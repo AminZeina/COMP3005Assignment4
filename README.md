@@ -7,7 +7,7 @@ This project demonstrates basic CRUD operations on DatabaseInteraction PostgreSQ
 
 1. Install PostgreSQL
 2. Launch pgAdmin (PostgreSQL frontend management tool)
-3. Create DatabaseInteraction database named `Assignment4DemoDB`
+3. Create database named `Assignment4DemoDB`
    - `Servers` -> `PostgreSQL 10` (right-click) -> `Create` -> `Database` 
 4. Create DatabaseInteraction table named `students`
    - `Assignment4DemoDB` (right-click) -> `SQL Query Tool`

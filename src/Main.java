@@ -75,10 +75,12 @@ public class Main {
                         System.out.println("Error adding student: " + e);
                     }
                 } catch (IllegalArgumentException e) {
-                    System.out.println("Invalid input. enrollment date must be a valid date in the form YYYY-MM-DD. See README for examples");
+                    System.out.println("Invalid input. enrollment date must be a valid date in the form YYYY-MM-DD. " +
+                            "See README for examples");
             }
         } else {
-            System.out.println("Invalid input. You must enter all 4 student values, comma separated. See README for examples");
+            System.out.println("Invalid input. You must enter all 4 student values, comma separated. See README " +
+                    "for examples");
         }
         System.out.println("---- End of operation ----");
     }
@@ -103,7 +105,8 @@ public class Main {
                 System.out.println("Invalid input. student_id must be an integer. See README for examples");
             }
         } else {
-            System.out.println("Invalid input. You must enter both a student id and new email, comma separated. See README for examples");
+            System.out.println("Invalid input. You must enter both a student id and new email, comma separated. " +
+                    "See README for examples");
         }
         System.out.println("---- End of operation ----");
     }

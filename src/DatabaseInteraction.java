@@ -35,7 +35,8 @@ public class DatabaseInteraction {
 
     // Print the results of a ResultSet in a readable format
     public static void printResults(ResultSet rs) throws SQLException {
-        // taken from https://stackoverflow.com/questions/19934591/what-is-the-most-efficient-way-to-print-all-query-results-with-column-names?rq=3
+        // taken from https://stackoverflow.com/questions/19934591/
+        // what-is-the-most-efficient-way-to-print-all-query-results-with-column-names?rq=3
         ResultSetMetaData meta= rs.getMetaData();
         int columnNum=meta.getColumnCount();
 
@@ -58,7 +59,8 @@ public class DatabaseInteraction {
     }
 
     // add the given student
-    public void addStudent(String first_name, String last_name, String email, Date enrollment_date) throws SQLException {
+    public void addStudent(String first_name, String last_name, String email, Date enrollment_date)
+            throws SQLException {
         String sql = "INSERT INTO students(first_name, last_name, email, enrollment_date) VALUES (?,?,?,?)";
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, first_name);

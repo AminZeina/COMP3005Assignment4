@@ -3,6 +3,8 @@ For COMP3005 Assignment4 - Fall 2023
 
 This project demonstrates basic CRUD operations on a PostgreSQL database using JDBC
 
+Video Demonstration: https://youtu.be/bL6ziBHMUeM
+
 ## Before using this application, you must:
 
 1. Install PostgreSQL

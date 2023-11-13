@@ -35,19 +35,11 @@ public class DatabaseInteraction {
 
     // Print the results of a ResultSet in a readable format
     public static void printResults(ResultSet rs) throws SQLException {
-        // taken from https://stackoverflow.com/questions/19934591/
-        // what-is-the-most-efficient-way-to-print-all-query-results-with-column-names?rq=3
-        ResultSetMetaData meta = rs.getMetaData();
-        int columnNum = meta.getColumnCount();
-
-        for(int i = 1; i <= columnNum; i++){
-            System.out.print(meta.getColumnName(i) + "\t");
-        }
-        while(rs.next()){
-            for(int i = 1; i <= columnNum; i++){
-                System.out.print(rs.getString(i) + "\t");
-            }
-            System.out.println();
+        while (rs.next()) {
+            System.out.printf("student_id: %d\tfirst_name: %s\tlast_name: %s\temail: %s\tdate: %s\n",
+                    rs.getInt("student_id"),
+                    rs.getString("first_name"), rs.getString("last_name"),
+                    rs.getString("email"), rs.getDate("enrollment_date"));
         }
     }
 

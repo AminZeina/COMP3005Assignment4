@@ -1,7 +1,7 @@
 # COMP3005Assignment4
 For COMP3005 Assignment4 - Fall 2023
 
-This project demonstrates basic CRUD operations on DatabaseInteraction PostgreSQL database using JDBC
+This project demonstrates basic CRUD operations on a PostgreSQL database using JDBC
 
 ## Before using this application, you must:
 
@@ -9,7 +9,7 @@ This project demonstrates basic CRUD operations on DatabaseInteraction PostgreSQ
 2. Launch pgAdmin (PostgreSQL frontend management tool)
 3. Create database named `Assignment4DemoDB`
    - `Servers` -> `PostgreSQL 10` (right-click) -> `Create` -> `Database` 
-4. Create DatabaseInteraction table named `students`
+4. Create database table named `students`
    - `Assignment4DemoDB` (right-click) -> `SQL Query Tool`
    - Run the following:
 ```

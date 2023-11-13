@@ -10,7 +10,7 @@ This project demonstrates basic CRUD operations on a PostgreSQL database using J
 3. Create database named `Assignment4DemoDB`
    - `Servers` -> `PostgreSQL 10` (right-click) -> `Create` -> `Database` 
 4. Create database table named `students`
-   - `Assignment4DemoDB` (right-click) -> `SQL Query Tool`
+   - `Assignment4DemoDB` (right-click) -> `Query Tool`
    - Run the following:
 ```
 CREATE TABLE students (

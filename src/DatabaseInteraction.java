@@ -3,8 +3,8 @@ import java.sql.*;
 public class DatabaseInteraction {
 
     private static final String url = "jdbc:postgresql://localhost:5432/Assignment4DemoDB" ;
-    private static final String user = "postgres";
-    private static final String password = "password";
+    private static final String user = "test";
+    private static final String password = "test";
 
     public Connection conn;
 
@@ -37,16 +37,17 @@ public class DatabaseInteraction {
     public static void printResults(ResultSet rs) throws SQLException {
         // taken from https://stackoverflow.com/questions/19934591/
         // what-is-the-most-efficient-way-to-print-all-query-results-with-column-names?rq=3
-        ResultSetMetaData meta= rs.getMetaData();
-        int columnNum=meta.getColumnCount();
+        ResultSetMetaData meta = rs.getMetaData();
+        int columnNum = meta.getColumnCount();
 
-        for(int i=1;i<=columnNum;i++){
-            System.out.print(meta.getColumnName(i)+" ");
+        for(int i = 1; i <= columnNum; i++){
+            System.out.print(meta.getColumnName(i) + "\t");
         }
         while(rs.next()){
-            for(int i=1;i<=columnNum;i++){
-                System.out.print(rs.getString(i)+" ");
+            for(int i = 1; i <= columnNum; i++){
+                System.out.print(rs.getString(i) + "\t");
             }
+            System.out.println();
         }
     }
 

@@ -34,8 +34,8 @@ INSERT INTO students (first_name, last_name, email, enrollment_date) VALUES
 Before running `Main` you must set your postgres username and password in `DatabaseInteraction.java`; 
 to do this, locate and modify the following snippet:
 ```
-    private static final String user = "postgres";
-    private static final String password = "password";
+    private static final String user = "test";
+    private static final String password = "test";
 ```
 Once your username and password are set, run `Main.java` in your Java IDE of choice. 
 
